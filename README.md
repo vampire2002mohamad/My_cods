@@ -63,7 +63,6 @@ ip-scanner/
 │── .env.example        # Example .env file for API keys
 │── ips.txt             # Sample IP list
 │── README.md           # Documentation
-│── .gitignore          # Ignore sensitive files
 ```
 
 ---
@@ -126,7 +125,7 @@ Contributions are welcome! To contribute:
 2. Clone your fork:
 
 ```sh
-git clone https://github.com/YOUR_USERNAME/ip-scanner.git
+git clone https://github.com/vampire2002mohamad/ip-scanner.git
 cd ip-scanner
 ```
 
@@ -150,7 +149,7 @@ git push origin feature-new-update
 
 ## 📞 Contact
 
-For issues or suggestions, open an issue on GitHub or email `your-email@example.com`.
+For issues or suggestions, open an issue on GitHub or email `mohamad.missh@gmail.com`.
 
 ---
 
