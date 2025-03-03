@@ -134,6 +134,21 @@ Enter your choice (1/2/3): 1
 
 ---
 
+## 📥 How to Download and Use the IP Scanner Tool
+
+To use the **IP Scanner Tool**, follow these steps:
+
+### **🔹 1️⃣ Clone the Repository**
+First, open your **Terminal (Linux/macOS)** or **PowerShell (Windows)** and run:
+
+```sh
+git clone https://github.com/vampire2002mohamad/ip-scanner.git
+cd ip-scanner
+```
+ 
+
+---
+
 ## 📢 Contributing
 
 Contributions are welcome! To contribute:
