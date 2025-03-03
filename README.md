@@ -1,29 +1,27 @@
 # 🚀 IP Scanner Tool
 
-**IP Scanner Tool** is a powerful and simple tool for scanning IP addresses using three well-known security services:
+**IP Scanner Tool** is a powerful and efficient tool for scanning IP addresses using three major security services:
 
 - **IPinfo**: Provides geolocation, ISP, and hostname information.
-- **AbuseIPDB**: Checks whether the IP has been reported for malicious activity.
-- **VirusTotal**: Scans the IP address against multiple security engines.
+- **AbuseIPDB**: Checks if the IP is reported for malicious activity.
+- **VirusTotal**: Scans the IP against multiple security engines.
 
-The tool reads a list of IPs from `ips.txt`, performs security checks, and generates a detailed **Excel report (`ip_report.xlsx`)** on the **Desktop**.
+The tool reads a list of IPs from `ips.txt`, performs security checks, and generates a **detailed report** in **Excel (`.xlsx`), CSV (`.csv`), or JSON (`.json`)**, saved on the **Desktop**.
 
 ---
 
-## 🔹 Features
-
+## **🔹 Features**
 ✅ **Reads IPs from `ips.txt` automatically**  
 ✅ **Runs security checks in parallel for better performance**  
-✅ **Saves results in an Excel report (`ip_report.xlsx`) on the Desktop**  
+✅ **Saves results in user-selected format (Excel, CSV, JSON)**  
 ✅ **Supports both Linux and Windows**  
-✅ **Uses `.env` file for API keys security**  
+✅ **Uses `.env` file for API key security**  
 ✅ **Multithreaded execution for faster processing**  
 
 ---
 
-## 🛠 Installation
-
-First, install the required dependencies:
+## **🛠 Installation**
+Before running the tool, install the required dependencies:
 
 ```sh
 pip install requests pandas openpyxl python-dotenv
@@ -99,21 +97,40 @@ After execution, the tool generates a detailed Excel, CSV, or JSON report and sa
 
 ---
 
-## 🎯 Example Output
+## 🎯 Example Usage
+
+Here’s an example of how the tool works:
+
+```sh
+python ip_scan.py
+```
+
+**Console Output:**
+
+```yaml
+📌 Scanning 3 IP addresses...
+🔍 Checking IP: 8.8.8.8
+🔍 Checking IP: 1.1.1.1
+🔍 Checking IP: 192.168.1.1
+
+📁 Choose the output file format:
+1️⃣ Excel (.xlsx)
+2️⃣ CSV (.csv)
+3️⃣ JSON (.json)
+
+Enter your choice (1/2/3): 1
+✅ Report saved as Excel file: /Users/yourname/Desktop/ip_report.xlsx
+```
+
+---
+
+## 🎯 Example Output (Excel, CSV, JSON)
 
 | IP         | Country | Hostname         | Org              | AbuseIPDB Score | VirusTotal Malicious Votes | Malicious Status |
 |------------|---------|-----------------|------------------|-----------------|-----------------------------|------------------|
 | 8.8.8.8    | US      | google.com      | Google LLC       | 0               | 0                           | Not Malicious    |
 | 1.1.1.1    | US      | cloudflare.com  | Cloudflare       | 1               | 0                           | Not Malicious    |
 | 192.168.1.1| N/A     | N/A             | Private Network  | 0               | 0                           | Not Malicious    |
-
----
-
-## 🔧 Future Improvements
-
-🚀 Support for IPv6 Scanning  
-🚀 Additional export formats (CSV, JSON)  
-🚀 Web-based GUI using Flask or Streamlit  
 
 ---
 
@@ -158,3 +175,6 @@ For issues or suggestions, open an issue on GitHub or email `mohamad.missh@gmail
 📌 **GitHub Repository**
 
 🚀 **Ready to scan? Run `python ip_scan.py` now!** 🚀
+
+---
+
